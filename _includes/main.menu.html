@@ -13,10 +13,10 @@
 				
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li role="presentation"><a role="button" href="/index.html#como-funciona">C&oacute;mo funciona</a></li>
-                        <li role="presentation"><a role="button" href="/index.html#beneficios">Beneficios</a></li>
-                        <li role="presentation"{% if include.option == "precios" %} class="active"{%endif%}><a role="button" href="/precios.html">Precios</a></li>
-                        <li role="presentation"{% if include.option == "contacto" %} class="active"{%endif%}><a role="button" href="/contacto.html">Contacto</a></li>
+                        <li role="presentation"><a role="button" href="{{ "index.html#como-funciona" | prepend:site.baseurl }}">C&oacute;mo funciona</a></li>
+                        <li role="presentation"><a role="button" href="{{ "index.html#beneficios" | prepend:site.baseurl }}">Beneficios</a></li>
+                        <li role="presentation"{% if include.option == "precios" %} class="active"{%endif%}><a role="button" href="{{ "precios.html" | prepend:site.baseurl }}">Precios</a></li>
+                        <li role="presentation"{% if include.option == "contacto" %} class="active"{%endif%}><a role="button" href="{{ "contacto.html" | prepend:site.baseurl }}">Contacto</a></li>
                         <li role="presentation"><a role="button" href="https://app.fonobot.com/">Ingresar</a></li>
                     </ul>
                 </div>
