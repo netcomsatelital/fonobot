@@ -1,0 +1,67 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+{% include head.html %}
+  </head>
+  <body id="page-home">
+{% include main.menu.html option="precios" %}
+    <main id="page-content">
+
+      <section id="precios" class="price-box">
+        <div class="container">
+          <header>
+            <h1>Precios</h1>
+            <p>Sin cargos mensuales ni contratos. Compre y utilice sus llamadas cuando las necesite.</p>
+            <p>Cobertura nacional en <strong>Argentina</strong> y <strong>Paraguay</strong>.</p>
+          </header>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="price-calculator">
+                <p>Ingrese su presupuesto a continuaci&oacute;n y descubra los beneficios de nuestras campa&ntilde;as.</p>
+                <form id="form_presupuesto" action="#" class="form-inline">
+                  <input type="number" name="presupuesto" id="presupuesto" value="40" step="10" min="40" max="1000" class="form-control text-center input-lg" maxlength="4"> USD
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="price-item">
+                <p class="price-item-title"><span>Argentina</span> <small>Interior</small></p>
+                <p class="price-item-price">u$s <span class="price-item-value"><span class="price-item-value-int">0</span>,<sup class="price-item-value-dec">05</sup></span></p>
+                <p class="price-item-notes"><span class="price-item-count">800</span> <small>llamadas</small></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="price-item">
+                <p class="price-item-title"><span>Argentina</span> <small>Buenos Aires</small></p>
+                <p class="price-item-price">u$s <span class="price-item-value"><span class="price-item-value-int">0</span>,<sup class="price-item-value-dec">02</sup></span></p>
+                <p class="price-item-notes"><span class="price-item-count">2.000</span> <small>llamadas</small></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="price-item">
+                <p class="price-item-title"><span>Paraguay</span> <small>Todo el pa&iacute;s</small></p>
+                <p class="price-item-price">u$s <span class="price-item-value"><span class="price-item-value-int">0</span>,<sup class="price-item-value-dec">09</sup></span></p>
+                <p class="price-item-notes"><span class="price-item-count">444</span> <small>llamadas</small></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <footer>
+          <p>Todos los precios en d&oacute;lares estadounidenses.</p><p>Cada llamada corresponde a un minuto de comunicaci&oacute;n.</p>
+        </footer>
+      </section>
+
+    </main>
+{% include footer.html %}
+  <script type="text/javascript" src="/js/precios.js"></script>
+  </body>
+</html>

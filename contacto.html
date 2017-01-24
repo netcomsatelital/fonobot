@@ -1,0 +1,57 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+{% include head.html %}
+  </head>
+  <body id="page-home">
+{% include main.menu.html option="contacto" %}
+    <main id="page-content">
+
+      <section id="contacto">
+        <div class="container">
+          <header>
+            <h1>Contacto</h1>
+          </header>
+
+          <div class="row">
+            <div class="col-md-6">
+              <p>&iquest;Dudas? Estaremos encantados de poder ayudarlo.</p>
+              <dl>
+                <dt><i class="fa fa-envelope" aria-hidden="true"></i>E-Mail:</dt>
+                <dd><a href="mailto:info@fonobot.com">info@fonobot.com</a></dd>
+
+                <dt><i class="fa fa-phone" aria-hidden="true"></i>En Argentina:</dt>
+                <dd><a href="tel:+5491160209145">(011) 6020 9145</a></dd>
+
+                <dt><i class="fa fa-phone" aria-hidden="true"></i>En Paraguay:</dt>
+                <dd><a href="tel:+595982701000">0982 701000</a></dd>
+              </dl>
+            </div>
+            <div class="col-md-6">
+              <form method="post" action="/inc/contact_form.php" id="contact_form" target="fonobot_contact_form">
+                <div class="form-group">
+                  <input type="text" required="required" name="form1_nombre" id="form1_nombre" placeholder="Nombre" class="form-control">
+                </div>
+                <div class="form-group">
+                  <input type="text" required="required" name="form1_email" id="form1_email" placeholder="Correo electr&oacute;nico" class="form-control">
+                </div>
+                <div class="form-group">
+                  <textarea name="form1_comentario" id="form1_comentario" required="required" class="form-control" placeholder="Mensaje" rows="8"></textarea>
+                </div>
+                <input type="submit" id="form1_submit" value="Enviar comentario" class="btn btn-primary">
+                <div id="form1_status"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+{% include footer.html %}
+    <script type="text/javascript" src="/js/tw-sack.js"></script>
+    <script type="text/javascript" src="/js/contacto.js"></script>
+  </body>
+</html>

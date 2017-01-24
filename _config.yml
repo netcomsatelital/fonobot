@@ -1,0 +1,18 @@
+# Site settings
+title: "Fonobot - M&aacute;rketing telef&oacute;nico al alcance de todos"
+email: info@fonobot.com
+description: > # this means to ignore newlines until "baseurl:"
+  Fonobot es un sistema on-line de márketing telefónico al alcance de todos.
+  Le permite realizar llamadas telefónicas de márketing de manera simple y efectiva,
+  sin conocimientos previos, y a un costo accesible.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://prueba.fonobot.com" # the base hostname & protocol for your site
+twitter_username: fonobot
+github_username:  fonobot
+
+# Build settings
+markdown: kramdown
+
+# Para prueba local comentar "exclude" y poner "production" en false
+exclude: [ local ]
+production: true
