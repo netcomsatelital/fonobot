@@ -228,7 +228,7 @@ i.feature-item-icon {
  color: #FF641B;
 }
 
-.price-item-title small, .price-item-notes small {
+.price-item small {
  display: block;
  color: #888;
 }

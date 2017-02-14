@@ -11,16 +11,35 @@ $(document).ready(function() {
      return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
   };
 
+
   $('#form_presupuesto').on('submit', function() {
     return false;
   });
 
-  $('#presupuesto').on('change', function() {
+  var refresh = function() {
     $('.price-item-value').each(function (x) {
       var price = $(this).text().replace(',', '.');
-      var count = Math.round(($('#presupuesto').val()) / price);
+      var rate_id = $('#monedas').val();
+      var rate = _precios_list[rate_id].rate;
+      var count = Math.round(($('#presupuesto').val()) / rate / price);
       $(this).parent().parent().find('.price-item-count').first().text(count.formatMoney(0, ',', '.'));
     });
-  }).trigger('change');
+  };
+  
+  _precios_moneda_prev = $('#monedas').val();
 
+  $('#monedas').on('change', function () {
+    var moneda_cur = $('#monedas').val();
+    var rate_prev = _precios_list[_precios_moneda_prev].rate;
+    var rate_cur  = _precios_list[moneda_cur].rate;
+
+    var valor_cur = $('#presupuesto').val();
+    $('#presupuesto').val(Math.round(valor_cur / rate_prev * rate_cur));
+
+    _precios_moneda_prev = moneda_cur;
+
+    refresh();
+  });
+  $('#presupuesto').on('change', refresh).trigger('change');
 });
+
