@@ -224,6 +224,13 @@ i.feature-item-icon {
  font-weight: 300;
 }
 
+@media (min-width: 1200px) {
+ .price-item-title span {
+  font-size: 150%;
+  color: black;
+ }
+}
+
 .price-item-count {
  color: #FF641B;
 }
