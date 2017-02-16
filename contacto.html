@@ -31,7 +31,7 @@ layout: null
               </dl>
             </div>
             <div class="col-md-6">
-              <form method="post" action="/inc/contact_form.php" id="contact_form" target="fonobot_contact_form">
+              <form method="post" action="https://app.fonobot.com/mod/pub/contact_form.php" id="contact_form" target="fonobot_contact_form">
                 <div class="form-group">
                   <input type="text" required="required" name="form1_nombre" id="form1_nombre" placeholder="Nombre" class="form-control">
                 </div>
@@ -51,7 +51,7 @@ layout: null
 
     </main>
 {% include footer.html %}
-    <script type="text/javascript" src="/js/tw-sack.js"></script>
-    <script type="text/javascript" src="/js/contacto.js"></script>
+    <script type="text/javascript" src="{{ "js/tw-sack.js" | prepend:site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ "js/contacto.js" | prepend:site.baseurl }}"></script>
   </body>
 </html>

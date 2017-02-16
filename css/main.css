@@ -23,6 +23,10 @@ h1, h2, h3, h4, h5, h6 {
  margin-bottom: 4ex;
 }
 
+.img-photo {
+ border-radius: 6px;
+}
+
 #page-home h1, #page-home h2, #page-home h3, #page-home h4, #page-home h5, #page-home h6, #page-home .standout {
  text-align: center;
 }
@@ -129,7 +133,7 @@ main p {
  background-size: cover;
  background-repeat: none;
  background-color: #FF641B;
- background-image: url(/img/hero-bg-01.jpg);
+ background-image: url(../img/hero-bg-01.jpg);
  font-size: 120%;
  text-shadow: 0 0 4pt #000;
  margin-bottom: 6ex;
