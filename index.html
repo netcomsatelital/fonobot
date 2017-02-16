@@ -17,35 +17,18 @@ layout: null
         </div>
       </header>
 
-      <section id="que-es">
+      <section id="que-es" class="section-impar">
         <div class="container">
           <header>
             <h1>&iquest;Qu&eacute; es?</h1>
           </header>
-
-          <div class="row">
-            <div class="col-md-6">
-              <p class="standout">Fonobot es un servicio que hace llamadas telef&oacute;nicas por usted, con la posibilidad de dirigirse a un p&uacute;blico o zona espec&iacute;ficas gracias a una amplia base de datos.</p>
-            </div>
-            <div class="col-md-6">
-              <p class="standout text-center"><img class="img-responsive img-photo" src="{{ "img/index/que-es-08.jpg" : prepend:site.baseurl }}"></p>
-            </div>
-          </div>
-          <p class="standout">&iquest;Para qu&eacute; sirve? Puede realizar una campa&ntilde;a publicitaria para aumentar las ventas de su comercio, ofrecer servicios, promocionar espect&aacute;culos, y muchas cosas m&aacute;s.</p>
-
-          <h2>F&aacute;cil de usar</h2>
-          <div class="row">
-            <div class="col-md-6">
-              <p class="standout">Puede hacer todo desde su computadora. S&oacute;lo tiene que crear su mensaje de audio, subirlo a nuestra plataforma, elegir a qui&eacute;nes va dirigido... &iexcl;y listo! Las llamadas se realizar&aacute;n en los d&iacute;as y horarios seg&uacute;n sus necesidades. Luego podr&aacute; realizar un seguimiento de la efectividad de la campa&ntilde;a.</p>
-            </div>
-            <div class="col-md-6">
-              <p class="standout text-center"><img class="img-responsive img-photo" src="{{ "img/index/que-es-04.png" | prepend:site.baseurl }}"></p>
-            </div>
-          </div>
+          <p class="standout">Fonobot es un servicio que hace llamadas telef&oacute;nicas por usted, con la posibilidad de dirigirse a un p&uacute;blico o zona espec&iacute;ficas gracias a una amplia base de datos.</p>
+          <h2>&iquest;Para qu&eacute; sirve?</h2>
+          <p class="standout">Puede realizar una campa&ntilde;a publicitaria para aumentar las ventas de su comercio, ofrecer servicios, promocionar espect&aacute;culos, realizar encuestas, y muchas cosas m&aacute;s.</p>
         </div>
       </section>
 
-      <section id="como-funciona" class="feature-box">
+      <section id="como-funciona" class="feature-box section-par">
         <div class="container">
           <header>
             <h1>C&oacute;mo funciona</h1>
@@ -63,9 +46,9 @@ layout: null
 
             <div class="feature-item col-md-4">
               <img class="feature-item-icon" src="{{ "img/index/feature-icon-lugar.png" | prepend:site.baseurl }}">
-              <div class="feature-item-title">Elija a d&oacute;nde llamar</div>
+              <div class="feature-item-title">Elija a qui&eacute;nes llamar</div>
               <div class="feature-item-body">
-                <p>&iquest;Desea que el mensaje se entregue cerca de su comercio? &iquest;En toda su localidad? &iquest;En una provincia? Fonobot buscar&aacute; los n&uacute;meros telef&oacute;nicos para llamar.</p>
+                <p>&iquest;Desea que el mensaje se entregue cerca de su comercio? &iquest;En una localidad? &iquest;A su lista de contactos? Fonobot preparar&aacute; los n&uacute;meros telef&oacute;nicos para llamar.</p>
               </div>
             </div>
 
@@ -73,7 +56,7 @@ layout: null
               <img class="feature-item-icon" src=" {{ "img/index/feature-icon-fonobot.png" | prepend:site.baseurl }}">
               <div class="feature-item-title">Fonobot se ocupa del resto</div>
               <div class="feature-item-body">
-                <p>Fonobot se encargar&aacute; de llamar a los n&uacute;meros de tel&eacute;fono indicados, y reproducir&aacute; el mensaje de audio que grab&oacute;.</p>
+                <p>Fonobot se encargar&aacute; de llamar a los n&uacute;meros de tel&eacute;fono indicados, y reproducir&aacute; el mensaje de audio que grab&oacute; previamente.</p>
               </div>
             </div>
 
@@ -81,8 +64,49 @@ layout: null
 
         </div>
       </section>
+
+      <header class="subhero-unit subhero-unit-left" style="background-image:url({{ "img/index/header-bg-redactor.jpg" | prepend:site.baseurl }})">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 subhero-unit-content">
+              <h1>Publicidad efectiva</h1>
+              <p class="standout">Nuestros especialistas estar&aacute;n encantados de asesorarlo con el texto de su mensaje.</p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <header class="subhero-unit subhero-unit-right" style="background-image:url({{ "img/index/header-bg-locutor.jpg" | prepend:site.baseurl }})">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-push-6 subhero-unit-content">
+              <h1>Voces profesionales</h1>
+              <p class="standout" style="margin-top:3ex; margin-bottom:1ex">Elija la voz que m&aacute;s le guste y nosotros hacemos el resto.</p>
+              <div class="row text-center">
+                <div class="col-xs-6">
+                  <div class="audio-thumbnail">
+                    <a class="audio-playback-control" href="#"><span class="glyphicon glyphicon-play"></span><br>Promo Nahuel</a>
+                    <audio controls="controls" preload="none">
+                      <source src="{{ "media/fonobot-promo-nahuel.mp3" | prepend:site.baseurl }}" type="audio/mpeg">
+                    </audio>
+                  </div>
+                </div>
+                <div class="col-xs-6">
+                  <div class="audio-thumbnail">
+                    <a class="audio-playback-control" href="#"><span class="glyphicon glyphicon-play"></span><br>Promo Mar</a>
+                    <audio controls="controls" preload="none">
+                      <source src="{{ "media/fonobot-promo-mar.mp3" | prepend:site.baseurl }}" type="audio/mpeg">
+                    </audio>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
       
-      <section id="beneficios" class="feature-box">
+      <section id="beneficios" class="feature-box section-par">
         <div class="container">
           <header>
             <h1>Beneficios</h1>
@@ -141,5 +165,6 @@ layout: null
 
     </main>
 {% include footer.html %}
+  <script type="text/javascript" src="{{ "js/audio.js" | prepend:site.baseurl }}"></script>
   </body>
 </html>

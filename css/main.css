@@ -136,8 +136,12 @@ main p {
  background-image: url(../img/hero-bg-01.jpg);
  font-size: 120%;
  text-shadow: 0 0 4pt #000;
+}
+
+#page-article main header {
  margin-bottom: 6ex;
 }
+
 
 #page-article h1 {
  color: #FEFEFE;
@@ -297,7 +301,7 @@ i.feature-item-icon {
 }
 
 
-#beneficios {
+.section-impar {
  background-color: #F5F5F5;
 }
 
@@ -346,6 +350,45 @@ main section h1:before {
 
 
 
+.subhero-unit {
+ height: 350px;
+ padding: 0;
+ margin: 0;
+ background-color: #F5F5F5;
+ background-repeat: no-repeat;
+ overflow: hidden;
+}
+
+
+.subhero-unit-left {
+ background-position: top right;
+}
+
+
+.subhero-unit-right {
+ background-position: top left;
+}
+
+.subhero-unit .subhero-unit-content {
+ color: black;
+ background-color: rgba(245,245,245, 0.85);
+ height: 350px;
+ border: 1px solid transparent;
+}
+
+
+@media only screen and (min-width: 992px) {
+ .subhero-unit-left .subhero-unit-content {
+  padding-right: 4em;
+ }
+
+
+ .subhero-unit-right .subhero-unit-content {
+  padding-left: 4em;
+ }
+}
+
+
 
 #page-footer {
  text-align: center;
@@ -376,5 +419,28 @@ main section h1:before {
 
 #form1_status {
  margin-top: 3ex;
+}
+
+
+.audio-playback-control,
+.audio-playback-control:link {
+ color: #337AB7;
+ display: block;
+ border: 2px solid #337AB7;
+ border-radius: 20px;
+ padding-top: 2ex;
+ padding-bottom: 2ex;
+ background: rgba(255,255,255, 0.5);
+}
+
+.audio-playback-control:hover {
+ color: #FF641B;
+ border-color: #FF641B;
+ text-decoration: none;
+}
+
+
+.audio-playback-control .glyphicon {
+ font-size: 200%;
 }
 
