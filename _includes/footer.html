@@ -16,4 +16,4 @@
 {% if site.production %}
 {% include google-analytics.html %}
 {% include tawk-to.html %}
-{% endif %}
+{% endif %}{% if page.use_lity %}    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.2.2/lity.min.js"></script>{% endif %}
