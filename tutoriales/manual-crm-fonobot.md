@@ -127,15 +127,15 @@ Menú principal
 
 El menú principal permite acceder a las funciones básicas del CRM.  En una pantalla de PC o tablet, se encuentra ubicado en la columna de la izquierda; en un celular, se debe hacer clic en el icono de las tres rayitas ubicado en la parte superior derecha para desplegar el menú con todas las opciones.
 
-![Menú principal]({{ "img/tutoriales/manual-crm-fonobot/espocrm006.png" | prepend:site.baseurl }})
+![Menú principal]({{ "/img/tutoriales/manual-crm-fonobot/espocrm006.png" | prepend:site.baseurl }})
 
 En la parte inferior de ese menú hay otro submenú con tres rayitas a su vez, y al desplegarlo están el resto de las opciones.
 
-![Menú de preferencias]({{ "img/tutoriales/manual-crm-fonobot/espocrm008.png" | prepend:site.baseurl }})
+![Menú de preferencias]({{ "/img/tutoriales/manual-crm-fonobot/espocrm008.png" | prepend:site.baseurl }})
 
 Para salir del sistema se debe pulsar sobre la última opción de este menú.
 
-![Menú de preferencias]({{ "img/tutoriales/manual-crm-fonobot/espocrm009.png" | prepend:site.baseurl }})
+![Menú de preferencias]({{ "/img/tutoriales/manual-crm-fonobot/espocrm009.png" | prepend:site.baseurl }})
 
 
 Elementos del sistema
@@ -156,7 +156,7 @@ Crear
 
 En el menú principal, hacer clic en la opción deseada, por ejemplo **Referencias**, luego en el botón **Crear** en la parte superior derecha de la pantalla.
 
-![Botón de crear elemento]({{ "img/tutoriales/manual-crm-fonobot/espocrm010.png" | prepend:site.baseurl }})
+![Botón de crear elemento]({{ "/img/tutoriales/manual-crm-fonobot/espocrm010.png" | prepend:site.baseurl }})
 
 Luego de cargar todos los datos necesarios, hacer clic en el botón **Guardar** en la parte superior izquierda.
 
@@ -166,7 +166,7 @@ Ver y editar
 
 En el menú principal, hacer clic en el tipo de dato que se desea ver o cambiar.  Al hacer clic en alguno de los elementos de la lista se procede a ver los detalles del.  Se puede hacer clic en el botón **Editar** ubicado arriba a la izquierda para cambiar los datos.
 
-![Lista de elementos]({{ "img/tutoriales/manual-crm-fonobot/espocrm011.png" | prepend:site.baseurl }})
+![Lista de elementos]({{ "/img/tutoriales/manual-crm-fonobot/espocrm011.png" | prepend:site.baseurl }})
 
 
 Eliminar
@@ -174,7 +174,7 @@ Eliminar
 
 Para eliminar un elemento, primero se debe buscarlo y seleccionarlo como se indica en el sección *Ver y editar*.  En la vista de detalles del elemento, buscar el botón **Editar** ubicado arriba a la izquierda de la pantalla, hacer clic sobre el botón de la flecha que apunta hacia abajo.  En el menú que se despliega hacer clic sobre la opción **Remover**.
 
-![Editar elementos]({{ "img/tutoriales/manual-crm-fonobot/espocrm007.png" | prepend:site.baseurl }})
+![Editar elementos]({{ "/img/tutoriales/manual-crm-fonobot/espocrm007.png" | prepend:site.baseurl }})
 
 
 Convertir referencia
@@ -182,13 +182,13 @@ Convertir referencia
 
 Para iniciar el ciclo de ventas propiamente dicho se debe crear una cuenta.  Muchas veces los datos ya están cargados en una referencia, y existe un método para convertir una referencia en una cuenta sin tener que volver a ingresar todos los datos de nuevo.
 
-![Convertir referencia]({{ "img/tutoriales/manual-crm-fonobot/espocrm012.png" | prepend:site.baseurl }})
+![Convertir referencia]({{ "/img/tutoriales/manual-crm-fonobot/espocrm012.png" | prepend:site.baseurl }})
 
 Para hacerlo se debe ir a la lista de referencias, buscar la que se desea convertir y seleccionarla.  Una vez dentro de la vista de la referencia, pulsar sobre el botón **Convertir** que se encuentra arriba a la derecha.
 
 Cuando se marquen los casilleros de **Cuenta**, **Contacto** y **Oportunidad** se desplegará un formulario nuevo debajo de cada una.  Se podrán verificar los datos que se usarán para crear la cuenta, el contacto y la oportunidad.
 
-![Datos de referencia a convertir]({{ "img/tutoriales/manual-crm-fonobot/espocrm013.png" | prepend:site.baseurl }})
+![Datos de referencia a convertir]({{ "/img/tutoriales/manual-crm-fonobot/espocrm013.png" | prepend:site.baseurl }})
 
 En el caso de que el cliente sea un particular, solamente es necesario crear una cuenta con el nombre del cliente.  Para las empresas, la cuenta debe ser el nombre de la empresa, y se debe dar de alta como contacto a la persona con la que se hace la tratativa.
 
@@ -202,11 +202,11 @@ Administración de cuentas
 
 La cuenta es un elemento central del CRM.  Además de los datos básicos (como el nombre, correo electrónico, teléfono, dirección, etc.), una cuenta puede contener varios sub-elementos;  en particular, una cuenta puede tener uno o varios contactos, y también una o varias oportunidades asociadas.
 
-![Botones para agregar sub-elementos]({{ "img/tutoriales/manual-crm-fonobot/espocrm014.png" | prepend:site.baseurl }})
+![Botones para agregar sub-elementos]({{ "/img/tutoriales/manual-crm-fonobot/espocrm014.png" | prepend:site.baseurl }})
 
 Para cargar un nuevo elemento dentro de la cuenta, primero se debe visualizar esa cuenta (seleccionarla de la lista de cuentas) y luego se debe ubicar el recuadro del elemento deseado màs abajo, y pulsar sobre el signo más (+) en la parte superior derecha de esa lista.  Luego de eso se deben rellenar los datos correspondientes y pulsar el botón **Guardar**.
 
-![Nuevo contacto dentro de cuenta]({{ "img/tutoriales/manual-crm-fonobot/espocrm015.png" | prepend:site.baseurl }})
+![Nuevo contacto dentro de cuenta]({{ "/img/tutoriales/manual-crm-fonobot/espocrm015.png" | prepend:site.baseurl }})
 
 En el caso de los clientes pequeños, no es necesario cargar contactos separados: los mismos datos de la cuenta sirven como datos de contacto.  Sin embargo, cuando se trata con empresas de cierta envergadura lo mejor es cargar los datos del ejecutivo de cuentas o responsable con quien que se entablan las negociaciones, para tener un trato más fluído en el caso de que haya que contactar por una inquietud.
 
@@ -218,6 +218,6 @@ Se debe crear una oportunidad por cada venta (ya sea potencial, en negociaciones
 
 Se debe modificar el campo **Etapa** de la oportunidad para mantener al sistema actualizado de las novedades.  Por ejemplo, cuando una venta se concreta exitosamente se debe establecer como **Cerrado Ganado**, pero si el cliente finalmente decidió no comprar se debe establecer como **Cerrado Perdido**.  En ambos casos se debe establecer la **Fecha de cierre** a la fecha del día.
 
-![Seguimiento de la oportunidad]({{ "img/tutoriales/manual-crm-fonobot/espocrm016.png" | prepend:site.baseurl }})
+![Seguimiento de la oportunidad]({{ "/img/tutoriales/manual-crm-fonobot/espocrm016.png" | prepend:site.baseurl }})
 
 También es buena práctica anotar comentarios en el campo **Seguimiento**, por ejemplo *"se llamó al cliente y solicitó una entrevista personal, se agenda para el día X"*.  Para esto se debe pulsar sobre el campo que dice *Escriba su comentario aquí* y anotar las novedades pertinentes.  Al hacerlo, aparecerá debajo del cuadro de texto un nuevo botón con la leyenda **Entrada**, el cual se debe pulsar para grabar el nuevo comentario.
