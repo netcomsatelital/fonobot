@@ -119,7 +119,7 @@ Ingreso
 
 Abra el navegador web (Google Chrome o Mozilla Firefox) en ingrese a la siguiente direcciòn:
 
-https://crm.fonobot.com
+<https://crm.fonobot.com>
 
 Una vez ingresado el nombre de usuario y la contraseña provista por el administrador del sistema, aparecerá la pantalla principal del sistema (dashboard).
 
