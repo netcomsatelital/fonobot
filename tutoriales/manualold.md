@@ -6,15 +6,13 @@ layout: legales
 Resumen
 =======
 
-El CRM es un sistema on-line que permite realizar el seguimiento de la gestión de los vendedores desde el momento en que cargan los datos captados, hasta el desenlace de la relación (que puede ser una venta generada o no), pasando por las acciones que se ejecutan, por ejemplo llamados, entrevistas, mailing, etc. con comentarios y fechas.
-
-Para ello el vendedor debe cargar los datos de los clientes, así como también de las tareas que va realizando (por ejemplo, "hoy se llamó al cliente X para presentarle y ofrecer el producto", "hoy se visitó al cliente Y para discutir una propuesta", "se cerró la venta Z por X monto", etc.)
+El CRM es un sistema on-line que permite hacer el seguimiento del trabajo que se hace para concretar ventas.  Para ello el vendedor debe cargar los datos de los clientes, así como también de las tareas que va realizando (por ejemplo, "hoy se llamó al cliente X para presentarle y ofrecer el producto", "hoy se visitó al cliente Y para discutir una propuesta", "se cerró la venta Z por X monto", etc.)
 
 
 Elementos del sistema
 =====================
 
-El sistema permite manejar varios elementos, los cuales pueden ser creados, modificados o eliminados.  Idealmente se deberían completar todos los datos posibles de cada entidad, pero se puede manejar una venta con sólo algunos datos de cada elemento.
+El sistema permite manejar varios elementos, los cuales pueden ser creados, cambiados o eliminados.  Idealmente se deberían completar todos los datos posibles de cada entidad, pero se puede manejar una venta con sólo algunos datos de cada elemento.
 
 * **Oportunidad:** se dice que hay una "oportunidad de venta" cuando hay un interés firme en el producto.  Cuando se crea una oportunidad en el sistema, ésta debe asociarse a una cuenta.
 
@@ -22,7 +20,7 @@ El sistema permite manejar varios elementos, los cuales pueden ser creados, modi
 
 * **Contacto:** para las empresas, es la persona con la que se realiza la tratativa.  Una cuenta puede tener varios contactos.
 
-* **Referencia:** son datos sueltos, personas o empresas con los que no se ha tomado contacto aún, y por lo tanto no se sabe si tienen interés o no en el producto.  Si al tomar contacto con una referencia ésta decide comprar, se debe crear una cuenta **y** una oportunidad asociada a esa misma cuenta.
+* **Referencia:** son datos sueltos, personas o empresas con los que no se ha tomado contacto aún, y por lo tanto no se sabe si tienen interés o no en el producto.  Si al tomar contacto con una referencia ésta decide comprar, se debe crear una cuenta cuenta **y** una oportunidad asociada a esa misma cuenta.
 
 
 Ciclos de venta
@@ -76,7 +74,7 @@ Caso 3: cuenta nueva
 
 Nuestra vendedora tiene la reunión con el sr. Bustamante, quien le comenta que está interesado en hacer una campaña para anunciar un evento con motivo del aniversario de la tienda.  En principio está interesado en invertir $ 2.000 en la campaña, pero quiere discutirlo primero con su socio que se encuentra en una reunión, así que queda en llamarla en cuanto hable con él.  Mientras tanto, crea una cuenta en Fonobot.com con su e-mail bautista@bufandas.com .
 
-Victoria considera que es tiempo de convertir la referencia en **oportunidad**.  Para eso ingresa en la referencia del sr. Bustamente en el CRM y pulsa el botón **Convertir** de la parte superior.  Luego marca las opciones **Cuenta**, **Contacto** y **Oportunidad**.  Por cada opción marcada se despliega un nuevo formulario debajo, en el que puede completar más datos.  De manera automática aparecen copiados los datos de la referencia original.
+Victoria considera que es tiempo de convertir la referencia en **oportunidad**.  Para eso entra en la referencia del sr. Bustamente en el CRM y pulsa el botón **Convertir** de la parte superior.  Luego marca las opciones **Cuenta**, **Contacto** y **Oportunidad**.  Por cada opción marcada se despliega un nuevo formulario debajo, en el que puede completar más datos.  De manera automática aparecen copiados los datos de la referencia original.
 
 En la sección referente a la oportunidad agrega los siguientes datos:
 
