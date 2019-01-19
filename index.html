@@ -6,11 +6,12 @@ use_lity: true
 <html lang="es">
   <head>
 {% include head.html %}
+{% include head.fa.html %}
   </head>
   <body id="page-home">
 {% include main.menu.html option=index %}
     <main id="page-content">
-      <header class="hero-unit">
+      <header class="hero-unit section-dark">
         <div class="container">
           <h1>M&aacute;rketing telef&oacute;nico al alcance de todos</h1>
           <p>Fonobot le permite crear campa&ntilde;as de llamadas telef&oacute;nicas desde la web, de manera f&aacute;cil e intuitiva.</p>
@@ -36,6 +37,20 @@ use_lity: true
         </div>
       </section>
 
+      <section class="subhero-unit section-secondary-1 section-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-push-6">
+              <img class="img-responsive img-rounded" src="{{ "/img/index/redactor.jpg" | prepend:site.baseurl }}">
+            </div>
+            <div class="col-md-6 col-md-pull-6">
+              <h1>Publicidad efectiva</h1>
+              <p class="standout">Nuestros especialistas estar&aacute;n encantados de asesorarlo con el texto de su mensaje.</p>
+            </div><!-- .col -->
+          </div><!-- .row -->
+        </div><!-- .container -->
+      </section>
+
       <section id="como-funciona" class="feature-box section-par">
         <div class="container">
           <header>
@@ -45,7 +60,7 @@ use_lity: true
           <div class="row">
 
             <div class="feature-item col-md-4">
-              <img class="feature-item-icon" src="{{ "/img/index/feature-icon-grabe.png" | prepend:site.baseurl }}">
+              <i class="feature-item-icon fas fa-microphone-alt" aria-hidden="true"></i>
               <div class="feature-item-title">Grabe su mensaje</div>
               <div class="feature-item-body">
                 <p>Ya sea contratando un estudio de grabaci&oacute;n, a un locutor profesional, o incluso desde su celular. El audio se almacenar&aacute; en nuestros servidores.</p>
@@ -53,7 +68,7 @@ use_lity: true
             </div>
 
             <div class="feature-item col-md-4">
-              <img class="feature-item-icon" src="{{ "/img/index/feature-icon-lugar.png" | prepend:site.baseurl }}">
+              <i class="feature-item-icon fas fa-map-marked-alt" aria-hidden="true"></i>
               <div class="feature-item-title">Elija a qui&eacute;nes llamar</div>
               <div class="feature-item-body">
                 <p>&iquest;Desea que el mensaje se entregue cerca de su comercio? &iquest;En una localidad? &iquest;A su lista de contactos? Fonobot preparar&aacute; los n&uacute;meros telef&oacute;nicos para llamar.</p>
@@ -73,46 +88,39 @@ use_lity: true
         </div>
       </section>
 
-      <header class="subhero-unit subhero-unit-left" style="background-image:url({{ "/img/index/header-bg-redactor.jpg" | prepend:site.baseurl }})">
+      <section class="subhero-unit section-secondary-2 section-dark">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 subhero-unit-content">
-              <h1>Publicidad efectiva</h1>
-              <p class="standout">Nuestros especialistas estar&aacute;n encantados de asesorarlo con el texto de su mensaje.</p>
-            </div>
-          </div>
-        </div>
-      </header>
-
-      <header class="subhero-unit subhero-unit-right" style="background-image:url({{ "/img/index/header-bg-locutor.jpg" | prepend:site.baseurl }})">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-md-push-6 subhero-unit-content">
+            <div class="col-md-6">
+              <img class="img-responsive img-rounded" src="{{ "/img/index/locutor.jpg" | prepend:site.baseurl }}">
+            </div><!-- .col -->
+            <div class="col-md-6">
               <h1>Voces profesionales</h1>
-              <p class="standout" style="margin-top:3ex; margin-bottom:1ex">Elija la voz que m&aacute;s le guste y nosotros hacemos el resto.</p>
-              <div class="row text-center">
-                <div class="col-xs-6">
-                  <div class="audio-thumbnail">
-                    <a class="audio-playback-control" href="#"><span class="glyphicon glyphicon-play"></span><br>Promo Nahuel</a>
-                    <audio controls="controls" preload="none">
-                      <source src="{{ "/media/fonobot-promo-nahuel.mp3" | prepend:site.baseurl }}" type="audio/mpeg">
-                    </audio>
-                  </div>
-                </div>
-                <div class="col-xs-6">
-                  <div class="audio-thumbnail">
-                    <a class="audio-playback-control" href="#"><span class="glyphicon glyphicon-play"></span><br>Promo Mar</a>
-                    <audio controls="controls" preload="none">
+              <p class="standout">Elija la voz que m&aacute;s le guste y nosotros hacemos el resto.</p>
+
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="audio-box">
+                    Promo Mar
+                    <audio class="audio-control" controls="controls" preload="none">
                       <source src="{{ "/media/fonobot-promo-mar.mp3" | prepend:site.baseurl }}" type="audio/mpeg">
                     </audio>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
+                    </div>
+                  </div><!-- .col -->
+                  <div class="col-sm-6">
+                    <div class="audio-box">
+                    Promo Nahuel
+                    <audio class="audio-control" controls="controls" preload="none">
+                      <source src="{{ "/media/fonobot-promo-nahuel.mp3" | prepend:site.baseurl }}" type="audio/mpeg">
+                    </audio>
+                    </div>
+                  </div><!-- .col -->
+                </div><!-- .row -->
 
+            </div><!-- .col -->
+          </div><!-- .row -->
+        </div><!-- .container -->
+      </section>
       
       <section id="beneficios" class="feature-box section-par">
         <div class="container">
@@ -131,7 +139,7 @@ use_lity: true
             </div>
 
             <div class="feature-item col-md-4">
-              <i class="feature-item-icon fa fa-smile-o" aria-hidden="true"></i>
+              <i class="feature-item-icon far fa-smile" aria-hidden="true"></i>
               <div class="feature-item-title">Sencillo</div>
               <div class="feature-item-body">
                 <p>No necesita de un experto. Ya sea con un celular, computadora o tablet, si tiene acceso a internet puede controlar sus campa&ntilde;as.</p>
@@ -151,7 +159,7 @@ use_lity: true
           <div class="row">
 
             <div class="feature-item col-md-4 col-md-offset-2">
-              <i class="feature-item-icon fa fa-tachometer" aria-hidden="true"></i>
+              <i class="feature-item-icon fas fa-tachometer-alt" aria-hidden="true"></i>
               <div class="feature-item-title">Controlable</div>
               <div class="feature-item-body">
                 <p>De manera directa y sin intermediarios. Puede ver la efectividad de sus campa&ntilde;as en el momento, y saber al instante el grado de respuesta.</p>
@@ -168,6 +176,16 @@ use_lity: true
 
           </div>
 
+        </div>
+      </section>
+
+      <section class="section-primary section-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+              <a href="https://app.fonobot.com/signup.php" class="btn btn-primary btn-lg btn-block">Cree una cuenta gratis</a>
+            </div>
+          </div>
         </div>
       </section>
 
