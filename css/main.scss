@@ -1,10 +1,17 @@
+---
+---
+$color-fg-dark: #444;
+$color-fg-light: #FEFEFE;
+$color-bg-dark: #222;
+$color-bg-light: #FEFEFE;
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+@import '_paleta';
 
 html, body, table {
  font-family: 'Open Sans', Verdana, sans-serif;
  font-size: 12pt;
- color: #444;
+ color: $color-fg-dark;
 }
 
 
@@ -14,7 +21,7 @@ h1, h2, h3, h4, h5, h6, .standout {
 }
 
 h1, h2, h3, h4, h5, h6 {
- color: #337AB7;
+ color: $color-primary-0;
 }
 
 .standout {
@@ -36,11 +43,26 @@ h1, h2, h3, h4, h5, h6 {
  margin-bottom: 0;
  background: transparent;
  border: 0;
+ font-size: 10.5pt;
 }
 
 .navbar-brand {
  padding-top: 8px;
 }
+
+.navbar-nav a:hover {
+ color: $color-primary-1 !important;
+}
+
+a:link {
+ color: $color-primary-0;
+}
+
+
+a:hover {
+ color: $color-primary-1;
+}
+
 
 .hero-unit {
  padding-top: 8ex;
@@ -50,20 +72,14 @@ h1, h2, h3, h4, h5, h6 {
  background-size: cover;
  background-repeat: none;
  font-size: 120%;
- color: #FEFEFE;
+ color: $color-fg-light;
  text-shadow: 0 0 4pt #000;
 }
 
-.hero-unit .btn {
- text-shadow: none;
-}
-
 .hero-unit h1 {
- color: #FEFEFE;
- margin-bottom: 2ex;
- font-weight: normal;
+ color: $color-fg-light;
+ font-weight: bold;
 }
-
 
 .hero-unit p {
  margin-bottom: 4ex;
@@ -98,16 +114,25 @@ main ul li:before {
  font-weight: bold;
  position: absolute;
  margin-left: -1em;
- color: #FF641B;
+ color: $color-complement-3;
+}
+
+
+main ul.checklist li {
+ padding-left: 2em;
+}
+
+main ul.checklist li:before {
+ content: "\00f058";
+ font-family: "Font Awesome 5 Free";
+ font-weight: normal;
+ position: absolute;
+ margin-left: -1.5em;
 }
 
 
 main ol {
  list-style-position: outside;
-}
-
-main h2 {
- margin-top: 4ex;
 }
 
 main p {
@@ -132,8 +157,8 @@ main p {
  background-position: center;
  background-size: cover;
  background-repeat: none;
- background-color: #FF641B;
- background-image: url(../img/hero-bg-01.jpg);
+ background-color: $color-primary-4;
+ background-image: url(../img/pexels-photo.jpg);
  font-size: 120%;
  text-shadow: 0 0 4pt #000;
 }
@@ -144,17 +169,33 @@ main p {
 
 
 #page-article h1 {
- margin-top: 5ex;
- margin-bottom: 0;
+ margin-top: 3ex;
+ margin-bottom: 2ex;
+ border-bottom: 1px solid $color-secondary-2-0;
 }
 
 #page-article header h1 {
- color: #FEFEFE;
+ color: $color-fg-light;
+ margin-top: 1ex;
+ margin-bottom: 1ex;
+ border-bottom: 0;
+}
+
+#page-article h2 {
+ margin-top: 3ex;
 }
 
 #page-article footer {
  margin-top: 16ex;
 }
+
+#page-article img {
+ max-width: 100%;
+ margin-left: auto;
+ margin-right: auto;
+ display: block;
+}
+
 
 .feature-box {
  text-align: center;
@@ -165,13 +206,17 @@ main p {
  margin-bottom: 2ex;
 }
 
+#beneficios .feature-item-icon {
+ color: $color-secondary-2-0;
+}
+
 .feature-item-icon {
  width: 100px;
  height: 100px;
  display: block;
  margin: 14pt auto;
  text-align: center;
- color: #337AB7;
+ color: $color-primary-0;
 }
 
 i.feature-item-icon {
@@ -182,54 +227,28 @@ i.feature-item-icon {
  font-weight: 300;
  font-size: 150%;
  margin-bottom: 1ex;
- color: #337AB7;
+ color: $color-secondary-2-4;
 }
 
-#precios {
- text-align: center;
- background-color: #094B83;
- color: #FEFEFE;
-}
 
-#precios input {
- color: #444;
-}
-
-#precios h1 {
- color: #FEFEFE;
-}
-
-#precios header {
- margin-bottom: 4ex;
-}
-
-#precios header p {
+#section-precios header p {
  letter-spacing: 0.2ex;
  font-size: 120%;
-}
-
-#precios footer {
- margin-top: 4ex;
- margin-bottom: 4ex;
-}
-
-#precios footer p {
- margin-top: 0.25ex;
- margin-bottom: 0.25ex;
 }
 
 .price-item, .price-calculator {
  padding: 4ex 2em 4ex;
  margin: 2ex;
  border-radius: 4px;
- background-color: white;
- color: #444;
+ background-color: $color-bg-light;
+ color: $color-fg-dark;
 }
 
 .price-item-title {
  margin-top: 2ex;
  padding-bottom: 2ex;
  border-bottom: 1px solid #DDD;
+ color: black;
 }
 
 .price-item-title span, .price-item-count {
@@ -240,12 +259,11 @@ i.feature-item-icon {
 @media only screen and (min-width: 992px) {
  .price-item-title span {
   font-size: 150%;
-  color: black;
  }
 }
 
 .price-item-count {
- color: #FF641B;
+ color: $color-complement-3;
 }
 
 .price-item small {
@@ -254,7 +272,7 @@ i.feature-item-icon {
 }
 
 .price-item-price {
- color: #337AB7;
+ color: $color-primary-0;
  font-weight: normal;
  font-size: 120%;
  margin-top: 2ex;
@@ -310,6 +328,52 @@ i.feature-item-icon {
  background-color: #F5F5F5;
 }
 
+.section-dark {
+ background-color: $color-bg-dark;
+}
+
+.section-dark,
+.section-dark h1,
+.section-dark h2,
+.section-dark h3,
+.section-dark h4,
+.section-dark h5,
+.section-dark h6 {
+ color: $color-fg-light;
+}
+
+.section-primary {
+ background-color: $color-primary-1;
+}
+
+.section-primary.section-dark {
+ background-color: $color-primary-4;
+}
+
+.section-complement {
+ background-color: $color-complement-1;
+}
+
+.section-complement.section-dark {
+ background-color: $color-complement-4;
+}
+
+.section-secondary-1 {
+ background-color: $color-secondary-1-1;
+}
+
+.section-secondary-1.section-dark {
+ background-color: $color-secondary-1-4;
+}
+
+.section-secondary-2 {
+ background-color: $color-secondary-2-1;
+}
+
+.section-secondary-2.section-dark {
+ background-color: $color-secondary-2-4;
+}
+
 
 main section h1 {
  position: relative;
@@ -318,79 +382,43 @@ main section h1 {
 }
 
 main section h1:before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  width: 4em;
-  margin-left: -2em;
-  bottom: 0;
-  height: 1px;
-  background: #FF641B;
+ content: "";
+ position: absolute;
+ left: 50%;
+ width: 4em;
+ margin-left: -2em;
+ bottom: 0;
+ height: 2px;
+ background: $color-secondary-2-0;
+}
+
+main .section-secondary-2 h1:before {
+ background: $color-complement-4;
+}
+
+main .section-dark h1:before {
+ background: $color-secondary-2-3;
+}
+
+main .section-secondary-2.section-dark h1:before {
+ background: $color-complement-3;
 }
 
 
-.btn {
- border-width: 0;
- border-bottom-width: 3px;
- border-radius: 3px;
-}
-
-.btn.btn-primary {
- background: #ff641b;
- border-color: #ff641b;
- border-radius:25px;
-}
-
-.btn.btn-primary:hover,
-.btn.btn-primary:focus {
- background: #e84a00;
-}
 
 .hero-unit .btn {
+ text-shadow: none;
  margin-top: 20px;
  background: rgba(0,0,0, 0.25);
- border: 3px solid #FEFEFE;
+ color: $color-fg-light;
+ border: 3px solid $color-fg-light;
  border-radius: 30px;
+ transition: background 0.25s, color 0.25s;
 }
 
-
-
-.subhero-unit {
- height: 350px;
- padding: 0;
- margin: 0;
- background-color: #F5F5F5;
- background-repeat: no-repeat;
- overflow: hidden;
-}
-
-
-.subhero-unit-left {
- background-position: top right;
-}
-
-
-.subhero-unit-right {
- background-position: top left;
-}
-
-.subhero-unit .subhero-unit-content {
- color: black;
- background-color: rgba(245,245,245, 0.85);
- height: 350px;
- border: 1px solid transparent;
-}
-
-
-@media only screen and (min-width: 992px) {
- .subhero-unit-left .subhero-unit-content {
-  padding-right: 4em;
- }
-
-
- .subhero-unit-right .subhero-unit-content {
-  padding-left: 4em;
- }
+.hero-unit .btn:hover,
+.hero-unit .btn:focus {
+ background: $color-primary-2;
 }
 
 
@@ -400,7 +428,7 @@ main section h1:before {
  margin: 0;
  padding-top: 3ex;
  padding-bottom: 2ex;
- background-color: #444;
+ background-color: $color-bg-dark;
  letter-spacing: 0.1ex;
  color: #DDD;
 }
@@ -419,7 +447,7 @@ main section h1:before {
 }
 
 #page-footer a:hover {
- color: #FF641B;
+ color: $color-complement-0;
 }
 
 #form1_status {
@@ -427,33 +455,57 @@ main section h1:before {
 }
 
 
-.audio-playback-control,
-.audio-playback-control:link {
- color: #337AB7;
- display: block;
- border: 2px solid #337AB7;
- border-radius: 20px;
- padding-top: 2ex;
- padding-bottom: 2ex;
- background: rgba(255,255,255, 0.5);
+.audio-box {
+ background-color: $color-complement-4;
+ padding: 1ex 2ex;
+ text-align: center;
+ border-radius: 8px;
+ margin: 1ex 0;
 }
 
-.audio-playback-control:hover {
- color: #FF641B;
- border-color: #FF641B;
- text-decoration: none;
+.audio-box h3 {
+ color: white;
+}
+
+.audio-control, .audio-control-playing {
+ border-radius: 12px;
+ transition: width 0.5s;
+}
+
+.audio-control {
+ width: 100%;
+}
+
+.audio-control-playing {
+ width: 100%;
 }
 
 
-.audio-playback-control .glyphicon {
- font-size: 200%;
+.btn {
+ background: none;
+ padding: 12px 22px;
 }
 
+.btn-primary {
+ border: 2px solid $color-primary-0;
+ color: $color-primary-0;
+ transition: background 0.25s, color 0.25s;
+}
 
-#page-article img {
- max-width: 100%;
- margin-left: auto;
- margin-right: auto;
- display: block;
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+ color: $color-fg-light;
+ border-color: $color-primary-0;
+ background-color: $color-primary-0;
+}
+
+.btn-primary:active, .btn-primary.active {
+ border-color: $color-primary-0;
+ color: $color-primary-1;
+ box-shadow: none;
+}
+
+.section-dark .btn {
+ border-color: $color-fg-light;
+ color: $color-fg-light;
 }
 
