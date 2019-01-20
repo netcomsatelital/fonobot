@@ -141,6 +141,26 @@ main p {
  line-height: 3.5ex;
 }
 
+main h1:first-child,
+main h2:first-child,
+main h3:first-child,
+main h4:first-child,
+main h5:first-child,
+main h6:first-child,
+main p:first-child {
+ margin-top: 0;
+}
+
+main h1:last-child,
+main h2:last-child,
+main h3:last-child,
+main h4:last-child,
+main h5:last-child,
+main h6:last-child,
+main p:last-child {
+ margin-bottom: 0;
+}
+
 
 .container {
  max-width: 780pt;
