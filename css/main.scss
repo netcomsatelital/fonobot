@@ -1,11 +1,11 @@
 ---
 ---
-$color-fg-dark: #444;
+$color-fg-dark: #333;
 $color-fg-light: #FEFEFE;
 $color-bg-dark: #222;
 $color-bg-light: #FEFEFE;
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans:300,400');
 @import '_paleta';
 
 html, body, table {
@@ -54,6 +54,10 @@ h1, h2, h3, h4, h5, h6 {
  color: $color-primary-1 !important;
 }
 
+a {
+ transition: color 0.35s;
+}
+
 a:link {
  color: $color-primary-0;
 }
@@ -76,9 +80,10 @@ a:hover {
  text-shadow: 0 0 4pt #000;
 }
 
-.hero-unit h1 {
+#page-article header h1, .hero-unit h1 {
  color: $color-fg-light;
- font-weight: bold;
+ font-family: Lato, Verdana, sans-serif;
+ font-weight: normal;
 }
 
 .hero-unit p {
@@ -183,7 +188,6 @@ main p:last-child {
 }
 
 #page-article header h1 {
- color: $color-fg-light;
  margin-top: 1ex;
  margin-bottom: 1ex;
  border-bottom: 0;
@@ -332,7 +336,12 @@ i.feature-item-icon {
 }
 
 
-.section-impar {
+.section-inner {
+ padding-top: 12ex;
+ padding-bottom: 14ex;
+}
+
+.section-whitesmoke {
  background-color: #F5F5F5;
 }
 
