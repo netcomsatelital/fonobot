@@ -4,15 +4,7 @@
 {% include head.html %}
   </head>
   <body{% if page.body_id %} id="{{ page.body_id }}"{% else if layout.body_id %} id="{{ layout.body_id }}"{% endif %}>
-    <header id="page-header">
-        <nav id="main-menu" class="navbar navbar-default" role="banner">
-            <div class="container">
-                <div class="navbar-header">
-                  <a class="navbar-brand" href="{% if site.production %}{{ site.baseurl | prepend:site.url }}{% else %}{{ site.baseurl | prepend:"/" }}{% endif %}"><img src="{{ "/img/fonobot_logo_94x32.png" | prepend:site.baseurl }}" alt="Fonobot"></a>
-                </div>
-            </div><!--/.container-->
-        </nav><!--/nav-->
-    </header><!--/header-->
+{% include menu.bare.html %}
     
     <main id="page-content">
       <header>

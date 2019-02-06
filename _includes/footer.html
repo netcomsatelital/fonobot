@@ -4,6 +4,10 @@
         <p class="copyright">Copyright &copy; 2014-2016 <a href="http://www.netcomsatelital.com.ar" target="_new">NetCom Satelital S.A.</a> Todos los derechos reservados</p>
         {% endcomment %}
         <p>
+          <a href="http://qr.afip.gob.ar/?qr=0HEWugLrIR_YFTAHTY4bBA,," target="_F960AFIPInfo"><img src="http://www.afip.gob.ar/images/f960/DATAWEB.jpg" border="0" class="footer-badge"></a>
+          <a href="https://www.argentina.gob.ar/aaip/datospersonales/reclama/33716138009--RL-2019-5073991-APN-DNPDP#AAIP" target="_aaipInfo"><img src="https://www.argentina.gob.ar/sites/default/files/aaip-isologo.png" alt="AAIP RNBD" class="footer-badge"></a>
+        </p>
+        <p>
           <a href="{{ "/condiciones.html" | prepend:site.baseurl }}">T&eacute;rminos y condiciones</a>
           <span class="separator" aria-hidden="true">|</span>
           <a href="{{ "/privacidad.html" | prepend:site.baseurl }}">Pol&iacute;tica de privacidad</a>
@@ -18,6 +22,6 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 {% if site.production %}
-{% include google-analytics.html %}
-{% include tawk-to.html %}
+{% include footer.google-analytics.html %}
+{% include footer.tawk-to.html %}
 {% endif %}{% if page.use_lity %}    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.2.2/lity.min.js"></script>{% endif %}

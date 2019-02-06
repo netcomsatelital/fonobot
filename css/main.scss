@@ -1,6 +1,6 @@
 ---
 ---
-$color-fg-dark: #333;
+$color-fg-dark: #444;
 $color-fg-light: #FEFEFE;
 $color-bg-dark: #222;
 $color-bg-light: #FEFEFE;
@@ -94,6 +94,28 @@ a:hover {
  margin-bottom: 0;
 }
 
+.section-overlay {
+ position: relative;
+}
+
+.section-overlay:before {
+ content: "";
+ position: absolute;
+ left: 0; right: 0;
+ top: 0; bottom: 0;
+}
+
+.block-overlay {
+  padding: 2ex 4ex 4ex;
+  margin: -2ex -4ex -4ex;
+  border-radius: 8px;
+}
+
+.section-overlay-dark:before,
+.block-overlay-dark {
+ background: rgba(0,0,0, 0.55);
+}
+
 main section {
  padding-top: 4ex;
  padding-bottom: 4ex;
@@ -125,6 +147,7 @@ main ul li:before {
 
 main ul.checklist li {
  padding-left: 2em;
+ margin-bottom: 2.5ex;
 }
 
 main ul.checklist li:before {
@@ -164,7 +187,8 @@ main p:last-child {
 }
 
 #page-home main .hero-unit,
-#page-article main header {
+#page-article main header,
+.hero-primary {
  padding-top: 8ex;
  padding-bottom: 8ex;
  background-position: center;
@@ -466,6 +490,12 @@ main .section-secondary-2.section-dark h1:before {
 #page-footer a:hover {
  color: $color-complement-0;
 }
+
+#page-footer .footer-badge {
+ margin: 2ex 3ex;
+ height: 65px;
+}
+
 
 #form1_status {
  margin-top: 3ex;
