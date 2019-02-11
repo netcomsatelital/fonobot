@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-brand {
- padding-top: 8px;
+ padding-top: 10px;
 }
 
 .navbar-nav a:hover {
@@ -94,6 +94,12 @@ a:hover {
  margin-bottom: 0;
 }
 
+.hero-unit .btn {
+ text-shadow: none;
+ margin-top: 20px;
+ background: rgba(0,0,0, 0.25);
+}
+
 .section-overlay {
  position: relative;
 }
@@ -113,7 +119,7 @@ a:hover {
 
 .section-overlay-dark:before,
 .block-overlay-dark {
- background: rgba(0,0,0, 0.55);
+ background: rgba(0,0,0, 0.65);
 }
 
 main section {
@@ -166,6 +172,10 @@ main ol {
 main p {
  margin-top: 2.5ex;
  margin-bottom: 2.5ex;
+}
+
+main p,
+main li {
  line-height: 3.5ex;
 }
 
@@ -180,6 +190,10 @@ main p:last-child {
 
 .container {
  max-width: 780pt;
+}
+
+.container-narrow {
+ max-width: 500pt;
 }
 
 #page-article .container {
@@ -225,7 +239,7 @@ main p:last-child {
  margin-top: 16ex;
 }
 
-#page-article img {
+#page-article main img {
  max-width: 100%;
  margin-left: auto;
  margin-right: auto;
@@ -267,7 +281,7 @@ i.feature-item-icon {
 }
 
 
-#section-precios header p {
+.standout-med {
  letter-spacing: 0.2ex;
  font-size: 120%;
 }
@@ -295,6 +309,11 @@ i.feature-item-icon {
 @media only screen and (min-width: 992px) {
  .price-item-title span {
   font-size: 150%;
+ }
+ .section-overlay-dark:before,
+ .block-overlay-dark {
+  background: rgba(0,0,0, 0.55);
+  background: linear-gradient(to right, rgba(0,0,0, 0), rgba(0,0,0, 0) 35%, rgba(0,0,0, 0.6) 50%, rgba(0,0,0, 0.95));
  }
 }
 
@@ -447,23 +466,6 @@ main .section-secondary-2.section-dark h1:before {
 
 
 
-.hero-unit .btn {
- text-shadow: none;
- margin-top: 20px;
- background: rgba(0,0,0, 0.25);
- color: $color-fg-light;
- border: 3px solid $color-fg-light;
- border-radius: 30px;
- transition: background 0.25s, color 0.25s;
-}
-
-.hero-unit .btn:hover,
-.hero-unit .btn:focus {
- background: $color-primary-2;
-}
-
-
-
 #page-footer {
  text-align: center;
  margin: 0;
@@ -531,6 +533,7 @@ main .section-secondary-2.section-dark h1:before {
 .btn {
  background: none;
  padding: 12px 22px;
+ border-radius: 24px;
 }
 
 .btn-primary {
@@ -554,5 +557,23 @@ main .section-secondary-2.section-dark h1:before {
 .section-dark .btn {
  border-color: $color-fg-light;
  color: $color-fg-light;
+}
+
+.section-dark .btn-primary:hover {
+ background-color: $color-bg-light;
+ color: $color-primary-4;
+}
+
+
+.btn-lg {
+ color: $color-fg-light;
+ border: 3px solid $color-fg-light;
+ border-radius: 30px;
+ transition: background 0.25s, color 0.25s;
+}
+
+.btn-lg:hover, .btn-lg:focus {
+ background: $color-bg-light;
+ color: $color-fg-dark;
 }
 
