@@ -577,3 +577,15 @@ main .section-secondary-2.section-dark h1:before {
  color: $color-fg-dark;
 }
 
+
+.btn-youtube,
+.btn-youtube:link {
+ color: white;
+ font-size: 128px;
+}
+
+.btn-youtube:hover,
+.btn-youtube:focus {
+ color: red;
+}
+

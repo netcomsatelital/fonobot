@@ -10,15 +10,23 @@ use_lity: true
   <body id="page-home">
 {% include menu.main.html option=index %}
     <main id="page-content">
+      <header class="hero-unit hero-primary section-dark" style="background-image:url({{ "/img/promo/20190211/hero.png" | prepend:site.baseurl }});">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <a href="https://www.youtube.com/watch?v=yZIbJu2up0c" class="btn-youtube" data-lity><i class="fab fa-youtube"></i></a>
+            </div><!-- .col -->
+          </div><!-- .row -->
+        </div><!-- .container -->
+      </header>
+{% comment %}
       <header class="hero-unit section-dark">
         <div class="container">
           <h1>M&aacute;rketing telef&oacute;nico al alcance de todos</h1>
           <p>Fonobot le permite crear campa&ntilde;as de llamadas telef&oacute;nicas desde la web, de manera f&aacute;cil e intuitiva.</p>
           <div class="row">
             <div class="col-md-4 col-md-offset-2">
-{% comment %}
               <a href="https://www.youtube.com/watch?v=0sVuw13uKc0" class="btn btn-primary btn-lg btn-block" data-lity><span class="glyphicon glyphicon-play"></span> Vea el explicativo</a>
-{% endcomment %}
               <a href="https://www.youtube.com/watch?v=yZIbJu2up0c" class="btn btn-primary btn-lg btn-block" data-lity><i class="fas fa-play"></i> &iquest;Qu&eacute; es Fonobot?</a>
             </div>
             <div class="col-md-4">
@@ -27,6 +35,7 @@ use_lity: true
           </div>
         </div>
       </header>
+{% endcomment %}
 
       <section id="que-es" class="section-whitesmoke section-inner">
         <div class="container inner">
