@@ -18,12 +18,13 @@ use_lity: true
               <p>Fonobot le permite crear campa&ntilde;as de llamadas telef&oacute;nicas desde la web, de manera f&aacute;cil e intuitiva.</p>
             </div>
             <div class="col-md-6">
-              <a href="https://www.youtube.com/watch?v=yZIbJu2up0c" class="btn-youtube" data-lity><i class="fab fa-youtube"></i></a>
+              <a href="https://www.youtube.com/watch?v=yZIbJu2up0c" class="btn-youtube" data-lity=""><i class="fab fa-youtube"></i></a>
             </div><!-- .col -->
           </div><!-- .row -->
         </div><!-- .container -->
       </header>
 {% comment %}
+<!--
       <header class="hero-unit section-dark">
         <div class="container">
           <h1>M&aacute;rketing telef&oacute;nico al alcance de todos</h1>
@@ -39,6 +40,7 @@ use_lity: true
           </div>
         </div>
       </header>
+-->
 {% endcomment %}
 
       <section id="que-es" class="section-whitesmoke section-inner">
@@ -206,7 +208,7 @@ use_lity: true
       </section>
 
     </main>
-{% include footer.html %}
+{% include footer.main.html %}
     <script type="text/javascript" src="{{ "/js/audio.js" | prepend:site.baseurl }}"></script>
   </body>
 </html>

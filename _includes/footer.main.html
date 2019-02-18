@@ -1,9 +1,9 @@
     <footer id="page-footer">
       <div class="container">
-        {% comment %}
-        <p class="copyright">Copyright &copy; 2014-2016 <a href="http://www.netcomsatelital.com.ar" target="_new">NetCom Satelital S.A.</a> Todos los derechos reservados</p>
-        {% endcomment %}
         <p>
+          <a href="https://www.facebook.com/fonobot" target="_facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.twitter.com/fonobot" target="_twitter" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/fonobot" target="_instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
           <a href="http://qr.afip.gob.ar/?qr=0HEWugLrIR_YFTAHTY4bBA,," target="_F960AFIPInfo"><img src="http://www.afip.gob.ar/images/f960/DATAWEB.jpg" border="0" class="footer-badge"></a>
           <a href="https://www.argentina.gob.ar/aaip/datospersonales/reclama/33716138009--RL-2019-5073991-APN-DNPDP#AAIP" target="_aaipInfo"><img src="https://www.argentina.gob.ar/sites/default/files/aaip-isologo.png" alt="AAIP RNBD" class="footer-badge"></a>
         </p>
@@ -16,12 +16,7 @@
           <span class="separator" aria-hidden="true">|</span>
           <a href="http://status.fonobot.com" targe="_new">Estado del servicio</a>
         </p>
+        <p class="copyright">Copyright &copy; 2014-2019 <a href="http://www.fonobot.com">Fonobot S.A.S.</a> Todos los derechos reservados</p>
       </div>
     </footer>
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-{% if site.production %}
-{% include footer.google-analytics.html %}
-{% include footer.tawk-to.html %}
-{% endif %}{% if page.use_lity %}    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.2.2/lity.min.js"></script>{% endif %}
+{% include footer.common.html %}

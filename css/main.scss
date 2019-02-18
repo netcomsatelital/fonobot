@@ -489,15 +489,27 @@ main .section-secondary-2.section-dark h1:before {
  text-decoration: underline;
 }
 
-#page-footer a:hover {
- color: $color-complement-0;
+#page-footer a:hover,
+#page-footer a:focus {
+ color: white;
 }
 
-#page-footer .footer-badge {
+#page-footer .footer-badge,
+#page-footer .social-icon {
  margin: 2ex 3ex;
  height: 65px;
 }
 
+#page-footer .social-icon i {
+ font-size: 250%;
+ line-height: 65px;
+ vertical-align: middle;
+ width: 1em;
+}
+
+#page-footer .copyright {
+ margin-top: 4ex;
+}
 
 #form1_status {
  margin-top: 3ex;
