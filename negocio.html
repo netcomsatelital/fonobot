@@ -1,0 +1,57 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+{% include head.html %}
+  </head>
+  <body id="page-home">
+{% include menu.main.html %}
+    <main id="page-content">
+
+      <section id="contacto">
+        <div class="container">
+          <header>
+            <h1>Oportunidades de negocio</h1>
+          </header>
+
+          <div class="row">
+            <div class="col-md-6">
+              <p>En Fonobot buscamos incorporar socios comerciales a nuestro equipo de trabajo para ofrecer y comercializar nuestro sistema de m&aacute;rketing telef&oacute;nico.</p>
+              <h2>Consegu&iacute; importantes ganancias</h2>
+              <p>Pod&eacute;s obtener hasta un 40% de ganancias por la venta directa del servicio. Tus ganancias van a ser acordes a tu trabajo, esfuerzo y dedicaci&oacute;n.</p>
+              <h2>Flexibilidad horaria</h2>
+              <p>Vos eleg&iacute;s c&oacute;mo, d&oacute;nde y cu&aacute;ndo desarrollar tu negocio independiente. Decidite a ser tu propio jefe y dale rienda suelta a tu esp&iacute;ritu emprendedor.</p>
+
+            </div>
+            <div class="col-md-6">
+              <p>&iquest;Interesado en iniciar tu propio negocio independiente en la web? Dejanos tus datos y un asesor te va a contactar para ofrecerte atenci&oacute;n personalizada.</p>
+              <form method="post" enctype="multipart/form-data" action="https://app.fonobot.com/mod/pub/negocio_form.php" id="negocio_form" target="fonobot_negocio_form">
+                <div class="form-group">
+                  <input type="text" required="required" name="form1_nombre" id="form1_nombre" placeholder="Nombre completo" class="form-control">
+                </div>
+                <div class="form-group">
+                  <input type="text" required="required" name="form1_email" id="form1_email" placeholder="Correo electr&oacute;nico" class="form-control">
+                </div>
+                <div class="form-group">
+                  <input type="text" required="required" name="form1_telefono" id="form1_telefono" placeholder="Tel&eacute;fono" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="form1_cv">Adjunt&aacute; tu CV</label>
+                  <input type="file" name="form1_cv" id="form1_cv" class="form-control-file">
+                </div>
+                <input type="submit" id="form1_submit" value="Enviar" class="btn btn-primary">
+                <div id="form1_status"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+{% include footer.main.html %}
+    <script type="text/javascript" src="{{ "/js/tw-sack.js" | prepend:site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ "/js/form_negocio.js" | prepend:site.baseurl }}"></script>
+  </body>
+</html>
