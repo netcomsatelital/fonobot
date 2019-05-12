@@ -34,13 +34,13 @@ addEvent(window, 'load', function () {
         document.getElementById('form1_telefono').value = '';
         document.getElementById('form1_cv').value = '';
 
-        this.form1_submit.disabled = false;
+        document.getElementById('form1_submit').disabled = false;
       }
       ajaxForm.onError = function() {
         this.form1_status.className = 'alert alert-danger';
         this.form1_status.innerHTML = 'Error enviando mensaje. Por favor vuelta a intentarlo mas tarde.';
 
-        this.form1_submit.disabled = false;
+        document.getElementById('form1_submit').disabled = false;
       }
       ajaxForm.setVar('ajax', 1);
       /*
