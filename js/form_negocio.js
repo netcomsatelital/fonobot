@@ -29,10 +29,10 @@ addEvent(window, 'load', function () {
       ajaxForm.onCompletion = function() {
         this.form1_status.className = 'alert alert-success';
         this.form1_status.innerHTML = 'El mensaje fue enviado.';
-        this.form1_nombre.value = '';
-        this.form1_email.value = '';
-        this.form1_telefono.value = '';
-        this.form1_cv.value = '';
+        document.getElementById('form1_nombre').value = '';
+        document.getElementById('form1_email').value = '';
+        document.getElementById('form1_telefono').value = '';
+        document.getElementById('form1_cv').value = '';
 
         this.form1_submit.disabled = false;
       }
