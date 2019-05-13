@@ -1,5 +1,6 @@
 ---
 layout: null
+use_lity: true
 ---
 <!DOCTYPE html>
 <html lang="es">
@@ -10,23 +11,35 @@ layout: null
 {% include menu.main.html %}
     <main id="page-content">
 
-      <section id="contacto">
+      <section class="section-inner">
         <div class="container">
           <header>
             <h1>Oportunidades de negocio</h1>
           </header>
 
+          <p class="standout">En Fonobot buscamos incorporar socios comerciales a nuestro equipo de trabajo para ofrecer y comercializar nuestro sistema de m&aacute;rketing telef&oacute;nico.</p>
           <div class="row">
             <div class="col-md-6">
-              <p>En Fonobot buscamos incorporar socios comerciales a nuestro equipo de trabajo para ofrecer y comercializar nuestro sistema de m&aacute;rketing telef&oacute;nico.</p>
               <h2>Consegu&iacute; importantes ganancias</h2>
               <p>Pod&eacute;s obtener hasta un 40% de ganancias por la venta directa del servicio. Tus ganancias van a ser acordes a tu trabajo, esfuerzo y dedicaci&oacute;n.</p>
               <h2>Flexibilidad horaria</h2>
               <p>Vos eleg&iacute;s c&oacute;mo, d&oacute;nde y cu&aacute;ndo desarrollar tu negocio independiente. Decidite a ser tu propio jefe y dale rienda suelta a tu esp&iacute;ritu emprendedor.</p>
-
             </div>
             <div class="col-md-6">
-              <p>&iquest;Interesado en iniciar tu propio negocio independiente en la web? Dejanos tus datos y un asesor te va a contactar para ofrecerte atenci&oacute;n personalizada.</p>
+              <div style="margin-top: 4ex; border-radius: 4px; background: #333 url({{ "/img/promo/20190211/hero.png" | prepend:site.baseurl }}) no-repeat center center; background-size:cover" class="text-center">
+                <a href="https://www.youtube.com/watch?v=yZIbJu2up0c" class="btn-youtube" data-lity="" style="display:block;padding-top:100px;padding-bottom:100px;"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div><!-- .row -->
+        </div><!-- .container -->
+      </section>
+
+      <section class="section-primary section-dark section-inner">
+        <div class="container">
+          <p class="standout">&iquest;Interesado en iniciar tu propio negocio independiente en la web?</p>
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <p>Dejanos tus datos y un asesor te va a contactar para ofrecerte atenci&oacute;n personalizada.</p>
               <form method="post" enctype="multipart/form-data" action="https://app.fonobot.com/mod/pub/negocio_form.php" id="negocio_form">
                 <div class="form-group">
                   <input type="text" required="required" name="form1_nombre" id="form1_nombre" placeholder="Nombre completo" class="form-control">
@@ -41,13 +54,13 @@ layout: null
                   <label for="form1_cv">Adjunt&aacute; tu CV</label>
                   <input type="file" name="form1_cv" id="form1_cv" class="form-control-file">
                 </div>
-                <input type="submit" id="form1_submit" value="Enviar" class="btn btn-primary">
+                <input type="submit" id="form1_submit" value="Enviar" class="btn btn-primary btn-lg">
                 <div id="form1_status"></div>
               </form>
-            </div>
-          </div>
-        </div>
-      </section>
+            </div><!-- .col -->
+          </div><!-- .row -->
+        </div><!-- .container -->
+      </section><!-- .section-secondary -->
 
     </main>
 {% include footer.main.html %}
