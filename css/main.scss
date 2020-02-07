@@ -601,3 +601,30 @@ main .section-secondary-2.section-dark h1:before {
  color: red;
 }
 
+
+
+#section-precios header {
+ margin-bottom: 12ex;
+}
+
+
+#section-precios footer {
+ margin-top: 12ex;
+}
+
+#section-precios footer p {
+ margin-top: 1ex;
+ margin-bottom: 1ex;
+ font-style: italic;
+}
+
+
+.container-mercadopago-logo {
+ background: rgba(255,255,255, 0.85);
+ border-radius: 6px;
+ padding: 12px;
+ display: inline-block;
+ margin-top: 1.5ex;
+ margin-bottom: 1.5ex;
+}
+
