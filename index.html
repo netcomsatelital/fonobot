@@ -10,6 +10,23 @@ use_lity: true
   <body id="page-home">
 {% include menu.main.html option=index %}
     <main id="page-content">
+
+      <header class="hero-unit hero-primary section-dark" style="background-image:url({{ "/img/promo/20200429/hero.png" | prepend:site.baseurl }}); background-position: center top;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="block-overlay block-overlay-dark">
+                <h1>&iquest;Hace entregas a domicilio? &iexcl;Avise a sus clientes!</h1>
+                <p>En estos tiempos de cuarentena y delivery, Fonobot lo ayuda a mantener y ampliar su clientela.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <a href="https://www.youtube.com/watch?v=yZIbJu2up0c" class="btn-youtube" data-lity=""><i class="fab fa-youtube"></i></a>
+            </div><!-- .col -->
+          </div><!-- .row -->
+        </div><!-- .container -->
+      </header>
+{% comment %}
       <header class="hero-unit hero-primary section-dark section-overlay section-overlay-dark" style="background-image:url({{ "/img/promo/20190211/hero.png" | prepend:site.baseurl }});">
         <div class="container">
           <div class="row">
@@ -23,6 +40,7 @@ use_lity: true
           </div><!-- .row -->
         </div><!-- .container -->
       </header>
+{% endcomment %}
 {% comment %}
 <!--
       <header class="hero-unit section-dark">
@@ -46,7 +64,7 @@ use_lity: true
       <section id="que-es" class="section-whitesmoke section-inner">
         <div class="container inner">
           <header>
-            <h1>&iquest;Qu&eacute; es?</h1>
+            <h1>&iquest;Qu&eacute; es Fonobot?</h1>
           </header>
           <p class="standout">Fonobot es un servicio que hace llamadas telef&oacute;nicas por usted, con la posibilidad de dirigirse a un p&uacute;blico o zona espec&iacute;ficas gracias a una amplia base de datos.</p>
           <h2>&iquest;Para qu&eacute; sirve?</h2>

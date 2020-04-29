@@ -3,7 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_newlines }}{% endif %}">
-    <meta name="keywords" content="{% if page.html_keywords %}{{ page.html_keywords }}{% else %}afiches, baner, banner, difusión, diseño, folletería, folleto, folletos, folletos color, imanes, imprenta, impresion folletos, impresion volantes, llamadas, llamadas automáticas, logo, lonas, marketing telefónico, pauta publicitaria, postales, stickers, tarjetas personales, telefonía, telefono, telemárketing, volantes, volantes color, volantes publicitarios{% endif %}">
+    <meta name="keywords" content="{% if page.html_keywords %}{{ page.html_keywords }}{% else %}delivery, entregas a domicilio, entregas domicilio, afiches, baner, banner, difusión, diseño, folletería, folleto, folletos, folletos color, imanes, imprenta, impresion folletos, impresion volantes, llamadas, llamadas automáticas, logo, lonas, marketing telefónico, pauta publicitaria, postales, stickers, tarjetas personales, telefonía, telefono, telemárketing, volantes, volantes color, volantes publicitarios{% endif %}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 {% include head.favicon.html %}
     <link type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
