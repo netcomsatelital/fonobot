@@ -15,7 +15,7 @@
                     <ul class="nav navbar-nav">
                         <li role="presentation"><a role="button" href="{{ "/index.html#como-funciona" | prepend:site.baseurl }}">C&oacute;mo funciona</a></li>
                         <li role="presentation"><a role="button" href="{{ "/index.html#beneficios" | prepend:site.baseurl }}">Beneficios</a></li>
-                        <li role="presentation"{% if include.option == "precios" %} class="active"{%endif%}><a role="button" href="{{ "/precios.html" | prepend:site.baseurl }}">Precios</a></li>
+                        {% comment %}<li role="presentation"{% if include.option == "precios" %} class="active"{%endif%}><a role="button" href="{{ "/precios.html" | prepend:site.baseurl }}">Precios</a></li>{% endcomment %}
                         <li role="presentation"{% if include.option == "contacto" %} class="active"{%endif%}><a role="button" href="{{ "/contacto.html" | prepend:site.baseurl }}">Contacto</a></li>
                         <li role="presentation"><a role="button" href="https://app.fonobot.com/">Ingresar</a></li>
                     </ul>
